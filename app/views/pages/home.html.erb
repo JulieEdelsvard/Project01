@@ -1,0 +1,5 @@
+<h1>Home</h1>
+
+<% if @current_user.present? %>
+  Welcome back <%= @current_user.email %>
+<% end %>
