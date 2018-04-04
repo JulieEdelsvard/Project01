@@ -40,6 +40,8 @@ end
 
 gem 'jquery-rails'
 
+gem 'geocoder'
+
 group :development do
   gem 'pry-rails'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.

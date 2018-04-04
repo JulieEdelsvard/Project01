@@ -1,1 +1,32 @@
-<h1>Hello</h1>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map {
+        height: 400px;
+        width: 50%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>Trip view</h3>
+    <div id="map"></div>
+    <script>
+    function initMap() {
+      var destination = {lat: <%= @calendar.destination.latitude %> , lng: <%= @calendar.destination.longitude %>};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: destination
+      });
+      var marker = new google.maps.Marker({
+        position: destination,
+        map: map
+      });
+    }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlFfN3j68LOw1bsZwi62WyOons6y3KZ9Q&callback=initMap">
+    </script>
+  </body>
+</html>

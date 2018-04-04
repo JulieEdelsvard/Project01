@@ -13,4 +13,7 @@
 
 class Destination < ApplicationRecord
   has_many :calendars
+
+  geocoded_by :name
+  after_validation :geocode
 end

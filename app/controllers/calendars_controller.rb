@@ -15,7 +15,7 @@ end
 
 private
   def calendar_params
-    params.require(:calendar).permit(:destination, :arrival_date, :departure_date)
+    params.require(:calendar).permit(:destination_id, :arrival_date, :departure_date)
   end
 
 end
