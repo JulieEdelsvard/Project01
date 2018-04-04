@@ -13,4 +13,11 @@
 class Calendar < ApplicationRecord
   belongs_to :user, :optional => true
   belongs_to :destination, :optional => true
+
+  def matches
+    Calendar.where('arrival_date >= ?', arrival_date).
+      where('departure_date <= ?', departure_date).
+      where(:destination_id => destination_id).
+      where('user_id IS NOT ?', user_id)
+  end
 end
