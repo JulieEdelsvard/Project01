@@ -11,4 +11,7 @@ u1 = User.create :email => 'will_hill@ga.co'
 u2 = User.create :email => 'stanley@ga.co'
 
 Destination.destroy_all
-d1 = Destination.create :name => 'sydney'
+d1 = Destination.create :name => 'Sydney'
+d2 = Destination.create :name => 'Singapore'
+d3 = Destination.create :name => 'Bangkok'
+d4 = Destination.create :name => 'Tokyo'

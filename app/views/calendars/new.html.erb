@@ -1,0 +1,17 @@
+<h1>New Trip</h1>
+
+<%= form_for @calendar do |f| %>
+
+  <%= f.label :destination_id %>
+  <%= f.select :destination_id, Destination.pluck(:name, :id), :include_blank => true %>
+
+  <%= f.label :arrival_date %>
+  <%= f.date_field :arrival_date %>
+
+  <%= f.label :departure_date %>
+  <%= f.date_field :departure_date %>
+
+  <%= f.submit "New Trip!" %>
+
+
+<% end %>

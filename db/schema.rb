@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20180401123802) do
     t.text "location"
     t.date "arrival_date"
     t.date "departure_date"
+    t.integer "destination_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -4,6 +4,7 @@ class CreateCalendars < ActiveRecord::Migration[5.1]
       t.text :location
       t.date :arrival_date
       t.date :departure_date
+      t.integer :destination_id 
 
 
       t.timestamps

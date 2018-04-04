@@ -15,7 +15,7 @@
 #               PATCH  /calendars/:id(.:format)      calendars#update
 #               PUT    /calendars/:id(.:format)      calendars#update
 #               DELETE /calendars/:id(.:format)      calendars#destroy
-# 
+#
 
 Rails.application.routes.draw do
   root :to => 'pages#home'
@@ -26,8 +26,10 @@ Rails.application.routes.draw do
   post '/login' => 'session#create' # Sign in action
   delete '/login' => 'session#destroy' # Sign out
 
-  # get 'new' => 'calendar#new'
-
   resources :calendars
+
+  get '/calendars/new' => 'calendar#new'
+  post '/calendars' => 'calendars#create'
+  get '/calendars/:id' => 'calendars#show'
 
 end
