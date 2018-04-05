@@ -30,3 +30,17 @@
     </script>
   </body>
 </html>
+
+
+<h1>Matches</h1>
+
+<% @current_user.calendars.each do |calendar| %>
+
+  <% calendar.matches.each do |match| %>
+    <h1><%= match.destination.name %></h1>
+    <p><%= match.user.email %></p>
+    <p><%= match.arrival_date %></p>
+    <p><%= match.departure_date %></p>
+
+  <% end %>
+<% end %>

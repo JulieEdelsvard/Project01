@@ -7,10 +7,14 @@ def show
   @calendar = Calendar.find params[:id]
 end
 
+def matches
+end
+
 def create
   @calendar = Calendar.new calendar_params
-    @calendar.save
-      redirect_to @calendar
+  @calendar.save
+  @current_user.calendars << @calendar
+  redirect_to @calendar
 end
 
 private

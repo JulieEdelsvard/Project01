@@ -18,6 +18,6 @@ class Calendar < ApplicationRecord
     Calendar.where('arrival_date >= ?', arrival_date).
       where('departure_date <= ?', departure_date).
       where(:destination_id => destination_id).
-      where('user_id IS NOT ?', user_id)
+      where.not(:user_id => user_id)
   end
 end
