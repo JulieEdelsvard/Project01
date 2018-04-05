@@ -9,17 +9,25 @@
   </head>
 
   <body>
-    <nav>
-      <%= link_to 'Home', root_path %>
-        <% if @current_user.present? %>
-          <%= link_to "Sign out #{ @current_user.email }", login_path, :method => 'delete' %>
-          <%= link_to 'New Trip', new_calendar_path %>
-        <% else %>
-      <%= link_to 'Sign Up', new_user_path %>
-      <%= link_to 'Sign In', login_path %>
-    
-    <% end %>
-    </nav>
+
+    <div class="container-fluid">
+
+      <nav>
+        <%= link_to 'Home', root_path %>
+          <% if @current_user.present? %>
+            <%= link_to "Sign out #{ @current_user.email }", login_path, :method => 'delete' %>
+            <%= link_to 'New Trip', new_calendar_path %>
+          <% else %>
+        <%= link_to 'Sign Up', new_user_path %>
+        <%= link_to 'Sign In', login_path %>
+
+      <% end %>
+      </nav>
+
     <%= yield %>
+    </div>
+
+  <div style="background-image:url('http://www.3a-travel.com/images/PlaneBackground2.jpg');">
+
   </body>
 </html>

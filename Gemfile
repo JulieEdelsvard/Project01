@@ -40,6 +40,8 @@ end
 
 gem 'jquery-rails'
 
+gem 'bootstrap-sass'
+
 gem 'geocoder'
 
 group :development do
