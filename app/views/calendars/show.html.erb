@@ -37,17 +37,17 @@
 
 <div id="column3">
   <div class="container2">
-<h2>Matches</h2>
+    <h2>Matches</h2>
 
-<% @current_user.calendars.each do |calendar| %>
+    <% @current_user.calendars.each do |calendar| %>
 
-  <% calendar.matches.each do |match| %>
-    <h4><%= match.destination.name %></h1>
-    <h5>User: <%= match.user.email %></h5>
-    <h5>Arrival date: <%= match.arrival_date %></h5>
-    <h5>Departure date: <%= match.departure_date %></h5>
+      <% calendar.matches.each do |match| %>
+      <h4><%= match.destination.name %></h1>
+      <h5>User: <%= match.user.email %></h5>
+      <h5>Arrival date: <%= match.arrival_date %></h5>
+      <h5>Departure date: <%= match.departure_date %></h5>
 
+    <% end %>
   <% end %>
-<% end %>
-</div>
+  </div>
 </div>

@@ -2,30 +2,29 @@
 
 <%= form_for @calendar do |f| %>
 
-<div class="container">
-  <div id="column1">
+  <div class="container">
+    <div id="column1">
 
-<div class="form-group">
-  <%= f.label :destination_id %>
-  <%= f.select :destination_id, Destination.pluck(:name, :id), :include_blank => true %>
-</div>
+  <div class="form-group">
+    <%= f.label :destination_id %>
+    <%= f.select :destination_id, Destination.pluck(:name, :id), :include_blank => true %>
+  </div>
 
-<div class="form-group">
-  <%= f.label :arrival_date %>
-  <%= f.date_field :arrival_date %>
-</div>
+  <div class="form-group">
+    <%= f.label :arrival_date %>
+    <%= f.date_field :arrival_date %>
+  </div>
 
-<div class="form-group">
-  <%= f.label :departure_date %>
-  <%= f.date_field :departure_date %>
-</div>
+  <div class="form-group">
+    <%= f.label :departure_date %>
+    <%= f.date_field :departure_date %>
+  </div>
 
-<div class="form-group">
-  <%= f.submit "New Trip!" %>
-</div>
+  <div class="form-group">
+    <%= f.submit "New Trip!" %>
+  </div>
 
 
-<% end %>
-
-</div>
+  <% end %>
+  </div>
 </div>

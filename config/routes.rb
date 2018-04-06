@@ -29,6 +29,4 @@ Rails.application.routes.draw do
   get '/calendars/matches' => 'calendars#matches'
   resources :calendars
 
-  get '/calendar' => 'calendar#show'
-
 end

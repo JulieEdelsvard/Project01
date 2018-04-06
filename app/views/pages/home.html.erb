@@ -3,12 +3,13 @@
   <div id="column1">
   <h1>TravelMate</h1>
 
-<br></br>
-
 
   <% if @current_user.present? %>
     Welcome back <%= @current_user.email %>
+      <% else %>
+    <h3>The match making app for travellers</h3>
   <% end %>
+
 
   <br></br>
   </div>

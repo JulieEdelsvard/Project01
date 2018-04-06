@@ -1,13 +1,37 @@
 
+html {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   text-align: center;
   background: url('https://images.alphacoders.com/276/thumb-1920-276051.jpg');
   font-size: 20px;
   color: #A9A9A9;
-
+  padding: 0;
+  margin: 0;
 }
 
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
 h1 {
+  color: #A9A9A9;
+}
+
+nav {
+  background-color: rgba(255,255,255, 0.3);
+  margin: 0;
+  padding: 1em;
+  width: 100%;
+}
+
+nav a {
+  padding: 20px;
   color: #A9A9A9;
 }
 
@@ -19,7 +43,6 @@ h1 {
   height: 400px;
   width: 400px;
   margin-top: 4em;
-
 }
 
 .container1 {
@@ -41,24 +64,17 @@ h1 {
 #column1 {
   flex: 1;
   padding-top: 4em;
+  text-align: left;
 }
 
 #column2 {
   flex: 2;
-  padding-top: 6em;
+  padding-top: 5em;
 }
 
 #column3 {
   flex: 1;
-  padding-top: 4em;
+  padding-top: 5em;
   text-align: left;
   margin-right: 4em;
-
-}
-
-nav {
-  color: #A9A9A9;
-  background-color: rgba(255,255,255, 0.3);
-  margin-right: 0;
-  padding: 1em;
 }

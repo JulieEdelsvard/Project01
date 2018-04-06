@@ -11,26 +11,29 @@
 <div class="container">
   <div id="column1">
 
-<%= form_for @user do |f| %>
-<div class="form-group">
-  <%= f.label :email %>
-  <%= f.email_field :email, :required => true %>
-</div>
+  <%= form_for @user do |f| %>
 
-<div class="form-group">
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-</div>
+  <div>
+    <div class="form-group">
+      <%= f.label :email %>
+      <%= f.email_field :email, :class => "form-control", :required => true %>
+    </div>
 
-<div class="form-group">
-  <%= f.label :password_confirmation %>
-  <%= f.password_field :password_confirmation %>
-</div>
+    <div class="form-group">
+      <%= f.label :password %>
+      <%= f.password_field :password, :class => "form-control" %>
+    </div>
 
-<div class="form-group">
-  <%= f.submit "Join!" %>
-</div>
+    <div class="form-group">
+      <%= f.label :password_confirmation %>
+      <%= f.password_field :password_confirmation, :class => "form-control" %>
+    </div>
 
-<% end %>
-</div>
+    <div class="form-group">
+      <%= f.submit "Join!" %>
+    </div>
+
+    <% end %>
+  </div>
+  </div>
 </div>
