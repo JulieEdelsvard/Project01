@@ -1,24 +1,55 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# TravelMate - The Match making app for travellers
 
-Things you may want to cover:
+## About the project
 
-* Ruby version
+The TravelMate app has been built as my second project of my Web Development course at General Assembly in Sydney.
 
-* System dependencies
+## About the app
 
-* Configuration
+Are you planning a trip but you do not have a travel partner? TravelMate brings single travellers together, like a match making app for people on the go. Plot in your destination and dates and TravelMate will show you which other adventurers who will be there at the same time.
 
-* Database creation
+## Tech / Frameworks used
 
-* Database initialization
+* HTML
+* CSS
+* Ruby
+* Ruby on Rails
+* JavaScript
+* Bootstrap
+* PostgreSQL
 
-* How to run the test suite
+## API
 
-* Services (job queues, cache servers, search engines, etc.)
+* Google Maps with pin points
 
-* Deployment instructions
+## Approach
 
-* ...
+The app utilises the model–view–controller (MVC) framework of Rails.
+
+* Models:
+  * User
+  * Destination
+  * Calendar
+
+* Handles data validation:
+  * Sign up information - verifying valid email addresses and setting secure passwords.
+  * Incorrect inputs are handled through error messages.
+
+* Handles authentication and authorization:
+  * Users must be signed in to access app features.
+
+## Demo
+
+[![TravelMate_demo](https://image.ibb.co/cTRu8J/travelmate.png)
+
+## Links
+
+Link to the project: https://frozen-fjord-15863.herokuapp.com/
+
+This project is available to fork at Github.
+After forking enter following commands in your terminal.
+$ git clone https://github.com/JulieEdelsvard/Travel_Mate.git
+$ cd project01
+
+This repository was created and is currently maintained by @JulieEdelsvard
