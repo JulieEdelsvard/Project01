@@ -41,7 +41,7 @@ The app utilises the model–view–controller (MVC) framework of Rails.
 
 ## Demo
 
-[![TravelMate_demo](https://image.ibb.co/cTRu8J/travelmate.png)
+![TravelMate_demo](https://image.ibb.co/cTRu8J/travelmate.png)
 
 ## Links
 
